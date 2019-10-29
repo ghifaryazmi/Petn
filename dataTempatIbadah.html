@@ -125,7 +125,6 @@
                         </a>
                     </li>
                     <li>
-                      <li class="active">
                         <a href="dataKeumatan.html">
                             <i class="material-icons">import_contacts</i>
                             <span>Data Keumatan</span>
@@ -150,6 +149,7 @@
                         </a>
                     </li>
                     <li>
+                        <li class="active">
                         <a href="dataTempatIbadah.html">
                             <i class="material-icons">location_city</i>
                             <span>Data Tempat Ibadah</span>
@@ -183,7 +183,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                DATA KEUMATAN
+                                DATA TEMPAT IBADAH
                             </h2>
                             
                         </div>
@@ -236,20 +236,8 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row clearfix">
-                                <div class="col-md-12">
-                                    <h5>
-                                        <b>Tahun</b>
-                                    </h5>
-                                    <select class="form-control show-tick">
-                                        <option>Mustard</option>
-                                        <option>Ketchup</option>
-                                        <option>Relish</option>
-                                    </select>
-                                </div>
-                            </div>
                             <div class="button-demo">
-                                <a href="formKeumatan.html"><button type="button" class="btn btn-primary waves-effect">TAMBAH DATA</button></a>
+                                <a href="formDataTempatIbadah.html"><button type="button" class="btn btn-primary waves-effect">TAMBAH DATA</button></a>
                             </div>
                        
                             <div class="table-responsive">
@@ -257,27 +245,20 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Kelurahan</th>
-                                            <th>Jumlah Penduduk</th>
-                                            <th>Tahun</th>
-                                            <th>Provinsi</th>
-                                            <th>Kabupaten</th>
-                                            <th>Kecamatan</th>
-                                            <th>Kelurahan</th>
+                                            <th>Nama Tempat Ibadah</th>
+                                            <th>Jenis</th>
+                                            <th>Alamat</th>
+                                            <th>Telepon</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    
                                     <tbody>
                                         <tr>
                                             <td>1</td>
                                             <td>System Architect</td>
                                             <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
                                             <td>$320,800</td>
                                             <td>$320,800</td>
-                                            <td>Sayegan</td>
                                             <td>
                                                 <button type="button" class="btn btn-default waves-effect" data-toggle="modal" data-target="#defaultModal">
                                                     <i class="material-icons">visibility</i>
@@ -294,11 +275,8 @@
                                             <td>2</td>
                                             <td>Accountant</td>
                                             <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
                                             <td>$170,750</td>
                                             <td>$320,800</td>
-                                            <td>Sayegan</td>
                                             <td>
                                                 <button type="button" class="btn btn-default waves-effect" data-toggle="modal" data-target="#defaultModal">
                                                     <i class="material-icons">visibility</i>
@@ -315,11 +293,8 @@
                                             <td>3</td>
                                             <td>Junior Technical Author</td>
                                             <td>San Francisco</td>
-                                            <td>66</td>
-                                            <td>2009/01/12</td>
                                             <td>$86,000</td>
                                             <td>$320,800</td>
-                                            <td>Sayegan</td>
                                             <td>
                                                 <button type="button" class="btn btn-default waves-effect" data-toggle="modal" data-target="#defaultModal">
                                                     <i class="material-icons">visibility</i>
@@ -346,85 +321,44 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title" id="largeModalLabel">Data Keumatan</h3>
+                            <h4 class="modal-title" id="largeModalLabel">Data Tempat Ibadah</h4>
                         </div>
-                        <div class="modal-body">                                
-                            <h5>TAHUN</h5>
+                        <div class="modal-body">
+                            <h5>NAMA TEMPAT IBADAH</h5>
                                 <p class="m-t-15 m-b-30">
-                                    2019
+                                    Minggir
                                 </p>
-                             <h5>JUMLAH PENDUDUK</h5>
+                            <h5>JENIS</h5>
                                 <p class="m-t-15 m-b-30">
-                                    2.600
+                                    Jl. Yos Sudarso Km.30 Yogyakarta
                                 </p>
-                            <h5>ISLAM</h5>
+                            <h5>ALAMAT</h5>
                                 <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>
-                            <h5>PROTESTAN</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>
-                            <h5>KATOLIK</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>
-                            <h5>HINDU</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>    
-                            <h5>BUDHA</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>
-                            <h5>JUMLAH MASJID</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>
-                            <h5>JUMLAH PESANTREN/MADRASAH</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>
-                            <h5>JUMLAH DA'I/KHATIB</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>    
-                            <h5>GEREJA</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>
-                            <h5>PURA</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
-                                </p>
-                            <h5>KLENTENG</h5>
-                                <p class="m-t-15 m-b-30">
-                                    2.600
+                                    petadakwahmui@gmail.com
                                 </p>
                             <h5>PROVINSI</h5>
                                 <p class="m-t-15 m-b-30">
-                                    2.600
+                                    Minggir
                                 </p>
                             <h5>KABUPATEN</h5>
                                 <p class="m-t-15 m-b-30">
-                                    2.600
+                                    Minggir
                                 </p>
                             <h5>KECAMATAN</h5>
                                 <p class="m-t-15 m-b-30">
-                                    2.600
+                                    Minggir
                                 </p>
                             <h5>KELURAHAN</h5>
                                 <p class="m-t-15 m-b-30">
-                                    2.600
+                                    Minggir
                                 </p>
-                            <h5>KETERANGAN</h5>
+                            <h5>TELEPON</h5>
                                 <p class="m-t-15 m-b-30">
-                                    Lorem ipsum dolor dolor loremp ipsum
-                                </p>    
+                                    087506443938
+                                </p>       
                             <br>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-link waves-effect">SAVE CHANGES</button>
                             <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
                         </div>
                     </div>
