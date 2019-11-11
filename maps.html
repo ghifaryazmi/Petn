@@ -15,6 +15,12 @@
 
     <!-- Bootstrap Core Css -->
     <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Bootstrap DatePicker Css -->
+    <link href="plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
     
      <!-- Bootstrap Select Css -->
     <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
@@ -151,6 +157,17 @@
                                 <label for="jumlah_umat">Jumlah Umat</label>
                             </li>
                         </ul>
+                    </li><li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">report_problem</i>
+                            <span>Problem Keagamaan</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <input type="checkbox" id="problem" class="filled-in">
+                                <label for="problem">Data Problem Keagamaan</label>
+                            </li>    
+                        </ul>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
@@ -221,16 +238,20 @@
                     </li>
                     <br>
                     <li>
-                        <select class="form-control">
-                            <option value="">-- Tahun --</option>
-                            <option value="10">2019</option>
-                            <option value="20">2018</option>
-                            <option value="30">2017</option>
-                            <option value="40">2016</option>
-                            <option value="50">2015</option>
-                        </select>
+                        <div class="input-group date" id="bs_datepicker_component_container">
+                            <div class="form-line">
+                                <input type="text" class="form-control" placeholder="Please choose a date...">
+                            </div>
+                            <span class="input-group-addon">
+                                <i class="material-icons">date_range</i>
+                            </span>
+                        </div>
                     </li>
+                     
+                        
+                    <a href="#"><button type="button" class="btn-maps bg-teal waves-effect" style="margin-top:20px">Search</button></a>
                 </ul>
+
             </div>
             <!-- #Menu -->
             <!-- Footer -->
@@ -278,6 +299,12 @@
     <!-- Custom Js -->
     <script src="js/admin.js"></script>
     <script src="js/pages/tables/jquery-datatable.js"></script>
+
+<!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- Bootstrap Datepicker Plugin Js -->
+    <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
     <!-- Demo Js -->
     <script src="js/demo.js"></script>
