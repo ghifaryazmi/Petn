@@ -16,26 +16,29 @@
     <!-- Bootstrap Core Css -->
     <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Bootstrap Material Datetime Picker Css -->
-    <link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
-
-    <!-- Bootstrap DatePicker Css -->
-    <link href="plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
-    
-     <!-- Bootstrap Select Css -->
-    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
-
     <!-- Waves Effect Css -->
     <link href="plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
     <link href="plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Morris Chart Css-->
-    <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Bootstrap DatePicker Css -->
+    <link href="plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+
+    <!-- Wait Me Css -->
+    <link href="plugins/waitme/waitMe.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="css/themes/all-themes.css" rel="stylesheet" />
@@ -136,28 +139,81 @@
                         </ul>-->
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">map</i>
-                            <span>Data</span>
+                            <i class="material-icons">layers</i>
+                            <span>Kantor MUI</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <input type="checkbox" id="remember_me" class="filled-in">
-                                <label for="remember_me">MUI Provinsi</label>
+                                <input type="checkbox" id="mui_provinsi" class="filled-in">
+                                <label for="mui_provinsi">MUI Provinsi</label>
                             </li>    
                             <li>
-                                <input type="checkbox" id="remember_me1" class="filled-in">
-                                <label for="remember_me1">MUI Kabupaten</label>
+                                <input type="checkbox" id="mui_kab" class="filled-in">
+                                <label for="mui_kab">MUI Kabupaten</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="remember_me2" class="filled-in">
-                                <label for="remember_me2">MUI Kecamatan</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="jumlah_umat" class="filled-in">
-                                <label for="jumlah_umat">Jumlah Umat</label>
+                                <input type="checkbox" id="mui_kec" class="filled-in">
+                                <label for="mui_kec">MUI Kecamatan</label>
                             </li>
                         </ul>
-                    </li><li>
+                    </li>
+                     <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">map</i>
+                            <span>Data Keumatan</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <input type="checkbox" id="jml_penduduk" class="filled-in">
+                                <label for="jml_penduduk">Jumlah Penduduk</label>
+                            </li>    
+                            <li>
+                                <input type="checkbox" id="jml_islam" class="filled-in">
+                                <label for="jml_islam">Jumlah Pemeluk Islam</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_protestan" class="filled-in">
+                                <label for="jml_protestan">Jumlah Pemeluk Kristen Protestan</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_katolik" class="filled-in">
+                                <label for="jml_katolik">Jumlah Pemeluk Kristen Katolik</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_hindu" class="filled-in">
+                                <label for="jml_hindu">Jumlah Pemeluk Hindu</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_budha" class="filled-in">
+                                <label for="jml_budha">Jumlah Pemeluk Budha</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_masjid" class="filled-in">
+                                <label for="jml_masjid">Jumlah Masjid</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_pesantren" class="filled-in">
+                                <label for="jml_pesantren">Jumlah Pesantren/Madrasah</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_dai" class="filled-in">
+                                <label for="jml_dai">Jumlah Da'i/Khatib</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_gereja" class="filled-in">
+                                <label for="jml_gereja">Jumlah Gereja</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_pura" class="filled-in">
+                                <label for="jml_pura">Jumlah Pura</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jml_klenteng" class="filled-in">
+                                <label for="jml_klenteng">Jumlah Klenteng</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">report_problem</i>
                             <span>Problem Keagamaan</span>
@@ -171,28 +227,57 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">grade</i>
+                            <i class="material-icons">group</i>
+                            <span>Organisasi Keagamaan</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <input type="checkbox" id="organisasiKeagamaan" class="filled-in">
+                                <label for="organisasiKeagamaan">Data Organisasi Keagamaan</label>
+                            </li>    
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">location_city</i>
                             <span>Tempat Ibadah</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
                                 <input type="checkbox" id="masjid" class="filled-in">
                                 <label for="masjid">Masjid</label>
-                            </li>    
+                            </li>
                             <li>
                                 <input type="checkbox" id="gereja" class="filled-in">
                                 <label for="gereja">Gereja</label>
-                            </li>
+                            </li>   
                             <li>
-                                <input type="checkbox" id="pure" class="filled-in">
-                                <label for="pure">Pure</label>
+                                <input type="checkbox" id="pura" class="filled-in">
+                                <label for="pura">Pura</label>
                             </li>
                             <li>
                                 <input type="checkbox" id="klenteng" class="filled-in">
                                 <label for="klenteng">Klenteng</label>
-                            </li>
+                            </li>   
                         </ul>
-                    </li>    
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">restaurant_menu</i>
+                            <span>Galeri Halal</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <input type="checkbox" id="restoran" class="filled-in">
+                                <label for="restoran">Restoran</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="hotel" class="filled-in">
+                                <label for="hotel">Hotel</label>
+                            </li>    
+                        </ul>
+                    </li>
+                   
                     <li>
                         <select class="form-control">
                             <option value="">-- Provinsi --</option>
@@ -240,7 +325,7 @@
                     <li>
                         <div class="input-group date" id="bs_datepicker_component_container">
                             <div class="form-line">
-                                <input type="text" class="form-control" placeholder="Please choose a date...">
+                                <input type="text" class="form-control" placeholder="Silahkan Pilih Tanggal...">
                             </div>
                             <span class="input-group-addon">
                                 <i class="material-icons">date_range</i>
@@ -271,7 +356,8 @@
         </div>
     </section>
 
-      <script src="plugins/jquery/jquery.min.js"></script>
+         <!-- Jquery Core Js -->
+    <script src="plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
     <script src="plugins/bootstrap/js/bootstrap.js"></script>
@@ -285,26 +371,21 @@
     <!-- Waves Effect Plugin Js -->
     <script src="plugins/node-waves/waves.js"></script>
 
-    <!-- Jquery DataTable Plugin Js -->
-    <script src="plugins/jquery-datatable/jquery.dataTables.js"></script>
-    <script src="plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
-    <script src="plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
-    <script src="plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
-    <script src="plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
-    <script src="plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
-    <script src="plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
-    <script src="plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
-    <script src="plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+    <!-- Autosize Plugin Js -->
+    <script src="plugins/autosize/autosize.js"></script>
 
-    <!-- Custom Js -->
-    <script src="js/admin.js"></script>
-    <script src="js/pages/tables/jquery-datatable.js"></script>
+    <!-- Moment Plugin Js -->
+    <script src="plugins/momentjs/moment.js"></script>
 
-<!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
     <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
     <!-- Bootstrap Datepicker Plugin Js -->
     <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/forms/basic-form-elements.js"></script>
 
     <!-- Demo Js -->
     <script src="js/demo.js"></script>
